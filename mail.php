@@ -18,14 +18,14 @@ try {
   $mail->CharSet = "UTF-8";
   $mail->SMTPAuth   = true;
 
-  $mail->Host       = 'smtp.example.com';                     //Set the SMTP server to send through
-  $mail->Username   = 'user@example.com';                     //SMTP username
-  $mail->Password   = 'secret';                               //SMTP password
+  $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
+  $mail->Username   = 'chris@chrisbowers.xyz';                     //SMTP username
+  $mail->Password   = 'WebsiteRedirect7898!';                               //SMTP password
   $mail->SMTPSecure = 'ssl';
   $mail->Port       = 465;
 
-  $mail->setFrom('from@example.com', $title);
-  $mail->addAddress('youraddress@mail.me');
+  $mail->setFrom('website@chrisbowers.xyz', $title);
+  $mail->addAddress('chris@chrisbowers.xyz');
   $mail->isHTML(true);
   $mail->Subject = $title;
   $mail->Body = $body;
