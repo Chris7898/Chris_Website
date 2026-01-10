@@ -349,8 +349,8 @@
           </p>
         </div>
 
-        <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000">
-          <div class="input-box">
+        <!-- <form class="contactForm" data-aos="zoom-in" data-aos-duration="1000"> -->
+          <!-- <div class="input-box">
             <input type="text" name="name" placeholder="Name" required />
             <input
               type="email"
@@ -379,9 +379,21 @@
               Send Message
             </button>
           </div>
-        </form>
-        <div class="response"></div>
-      </div>
+        </form> -->
+        <form action="phpmailer/Send_email.php" method="post">
+    <label for="email">Your Email Address:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="subject">Subject:</label>
+    <input type="text" id="subject" name="subject" required>
+    <br>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+    <br>
+    <input type="submit" value="Send Message">
+</form>
+        <!-- <div class="response"></div> -->
+      </div> 
     </section>
 
     <footer class="footer">
